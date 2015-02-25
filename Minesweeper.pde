@@ -189,11 +189,7 @@ public class MSButton
   }
   public boolean isValid(int r, int c)
   {
-    if (r<=20 && r>=0 && c<=20 && c>=0)
-    { 
-      return true;
-    }
-    return false;
+    return (r>=0 && r<NUM_ROWS) && ( c>=0 && c<NUM_COLS);
   }
   public int countBombs(int row, int col)
   {
